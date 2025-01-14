@@ -45,7 +45,7 @@ class ContentLockTest extends BrowserTestBase {
   /**
    * Test content lock configuration.
    */
-  public function testContentLockConfiguration() {
+  public function testContentLockConfiguration(): void {
 
     $user = $this->drupalCreateUser([], 'test_user', TRUE);
     $this->drupalLogin($user);
